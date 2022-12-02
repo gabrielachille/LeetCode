@@ -9,7 +9,7 @@
 //   return alpha.every((x) => string.includes(x));
 // }
 
-// isPangram("hello");
+isPangram("hello");
 //false
 
 isPangram("the quick brown fox jumps over the lazy dog");
