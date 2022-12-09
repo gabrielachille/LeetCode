@@ -14,3 +14,9 @@ isPangram("hello");
 
 isPangram("the quick brown fox jumps over the lazy dog");
 //true
+
+function isPangram(string) {
+  let string = string.toLowerCase();
+
+  let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+}
