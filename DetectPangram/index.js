@@ -19,4 +19,5 @@ function isPangram(string) {
   let string = string.toLowerCase();
 
   let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+  console.log(alphabet);
 }
