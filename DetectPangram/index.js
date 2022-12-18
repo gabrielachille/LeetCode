@@ -18,6 +18,6 @@ isPangram("the quick brown fox jumps over the lazy dog");
 function isPangram(string) {
   string = string.toLowerCase();
 
-  let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
-  return alphabet.every((x) => string.includes(x));
+  let alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+  return alpha.every((x) => string.includes(x));
 }
