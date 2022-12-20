@@ -19,5 +19,6 @@ function isPangram(string) {
   string = string.toLowerCase();
 
   let alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+  console.log(alpha.every((x) => string.includes(x)));
   return alpha.every((x) => string.includes(x));
 }
