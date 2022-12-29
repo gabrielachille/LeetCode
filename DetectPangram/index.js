@@ -14,11 +14,3 @@ isPangram("hello");
 
 isPangram("the quick brown fox jumps over the lazy dog");
 //true
-
-function isPangram(string) {
-  string = string.toLowerCase("");
-  let alpha = "abcdefghijklmnopqrstuvwxyz".split("");
-
-  console.log(alpha.every((x) => string.includes(x)));
-  return alpha.every((x) => string.includes(x));
-}
