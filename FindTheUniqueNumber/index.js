@@ -2,5 +2,5 @@
 //Return the one that isn't
 
 function findUniq(arr) {
-  // do magic
+  return arr.find((n) => indexOf(n) === arr.lastIndexOf(n));
 }
