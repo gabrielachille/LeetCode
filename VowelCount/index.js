@@ -2,5 +2,5 @@
 //Count the number of vowels in the string
 
 function getCount(str) {
-  return 0;
+  let vowel = /aeiou/;
 }
