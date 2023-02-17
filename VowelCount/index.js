@@ -9,4 +9,5 @@ function getCount(str) {
       count++;
     }
   }
+  return count;
 }
