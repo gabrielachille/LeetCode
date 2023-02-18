@@ -9,5 +9,6 @@ function getCount(str) {
       count++;
     }
   }
+  console.log(count);
   return count;
 }
