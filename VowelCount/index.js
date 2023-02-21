@@ -2,7 +2,7 @@
 //Count the number of vowels in the string
 
 function getVowelCount(str) {
-  let vowel = /aeiou/;
+  let vowel = /aeiou/g;
   let count = 0;
   for (let i = 0; i < str.length; i++) {
     if (str[i].match(vowel)) {
