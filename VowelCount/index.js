@@ -14,3 +14,5 @@
 // }
 
 getVowelCount("Hello World");
+
+function getVowelCount(str) {}
