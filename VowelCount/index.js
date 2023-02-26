@@ -15,4 +15,6 @@
 
 getVowelCount("Hello World");
 
-function getVowelCount(str) {}
+function getVowelCount(str) {
+  let count = 0;
+}
