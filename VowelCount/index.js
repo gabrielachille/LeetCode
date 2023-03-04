@@ -17,4 +17,5 @@ getVowelCount("Hello World");
 
 function getVowelCount(str) {
   let count = 0;
+  let vowel = /[aeiou]/gi;
 }
