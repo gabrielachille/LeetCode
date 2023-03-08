@@ -19,5 +19,8 @@ function getVowelCount(str) {
   let count = 0;
   let vowel = /[aeiou]/gi;
 
-  for (i = 0; i < str.length; i++) {}
+  for (i = 0; i < str.length; i++) {
+    if (str[i] == vowel) {
+    }
+  }
 }
