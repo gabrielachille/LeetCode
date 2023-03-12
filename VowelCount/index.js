@@ -21,6 +21,7 @@ function getVowelCount(str) {
 
   for (i = 0; i < str.length; i++) {
     if (str[i] == vowel) {
+      count++;
     }
   }
 }
