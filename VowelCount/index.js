@@ -24,4 +24,5 @@ function getVowelCount(str) {
       count++;
     }
   }
+  return count;
 }
