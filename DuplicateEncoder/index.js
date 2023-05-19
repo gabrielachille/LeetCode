@@ -1,6 +1,7 @@
 // take given string and return "(" for characters that only appear once
 // and ")" for characters that appear multiple times
 // case insensitive
+
 function duplicateEncode(word) {
   word = word.toLowerCase().split("");
   return word
