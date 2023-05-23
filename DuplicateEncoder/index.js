@@ -2,13 +2,13 @@
 // and ")" for characters that appear multiple times
 // case insensitive
 
-function duplicateEncode(word) {
-  word = word.toLowerCase().split("");
-  return word
-    .map((char, i, word) => {
-      return word.indexOf(char) == word.lastIndexOf(char) ? "(" : ")";
-    })
-    .join("");
-}
+// function duplicateEncode(word) {
+//   word = word.toLowerCase().split("");
+//   return word
+//     .map((char, i, word) => {
+//       return word.indexOf(char) == word.lastIndexOf(char) ? "(" : ")";
+//     })
+//     .join("");
+// }
 
 console.log(duplicateEncode("recede"));
