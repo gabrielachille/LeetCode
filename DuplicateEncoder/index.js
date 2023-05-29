@@ -12,3 +12,5 @@
 // }
 
 console.log(duplicateEncode("recede"));
+
+function duplicateEncoder() {}
