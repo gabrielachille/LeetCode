@@ -13,4 +13,4 @@
 
 console.log(duplicateEncode("recede"));
 
-function duplicateEncoder() {}
+function duplicateEncoder(word) {}
