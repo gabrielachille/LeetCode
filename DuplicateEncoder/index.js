@@ -13,4 +13,6 @@
 
 console.log(duplicateEncode("recede"));
 
-function duplicateEncoder(word) {}
+function duplicateEncoder(word) {
+  word = word.split("");
+}
