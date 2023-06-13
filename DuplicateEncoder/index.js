@@ -15,5 +15,5 @@ console.log(duplicateEncode("recede"));
 
 function duplicateEncoder(word) {
   word = word.split("");
-  word.map((x) => (word.lastIndexof(x) == word.indexof(x) ? "(" : ")"));
+  return word.map((x) => (word.lastIndexof(x) == word.indexof(x) ? "(" : ")"));
 }
