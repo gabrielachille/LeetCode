@@ -13,7 +13,7 @@
 
 console.log(duplicateEncode("recede"));
 
-function duplicateEncoder(word) {
+function duplicateEncode(word) {
   word = word.split("");
   return word.map((x) => (word.lastIndexof(x) == word.indexof(x) ? "(" : ")"));
 }
