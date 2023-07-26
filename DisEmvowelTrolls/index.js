@@ -2,4 +2,6 @@
 //"Y" is not included
 //7 kyu
 
-function disemvowel(str) {}
+function disemvowel(str) {
+  str = str.split("");
+}
