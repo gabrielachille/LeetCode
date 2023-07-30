@@ -3,5 +3,6 @@
 //7 kyu
 
 function disemvowel(str) {
+  let vowels = /[aeiouAEIOU]/gi;
   str = str.split("");
 }
