@@ -7,6 +7,7 @@ function disemvowel(str) {
   str = str.split("");
   for (let i = 0; i < str.length; i++) {
     if (str[i].match(vowels)) {
+      str.splice(i, 1);
     }
   }
 }
