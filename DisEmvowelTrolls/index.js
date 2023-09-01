@@ -12,3 +12,5 @@ function disemvowel(str) {
   }
   return str;
 }
+
+disemvowel("This website is for losers LOL!");
