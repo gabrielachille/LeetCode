@@ -10,6 +10,7 @@ function disemvowel(str) {
       str.splice(i, 1);
     }
   }
+  str = str.join("");
   console.log(str);
   return str;
 }
