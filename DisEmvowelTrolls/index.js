@@ -4,7 +4,7 @@
 
 function disemvowel(str) {
   let vowels = /[aeiouAEIOU]/gi;
-
+  str = str.filter((x) => x.match(vowels));
   return str;
 }
 
