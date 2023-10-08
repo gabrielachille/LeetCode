@@ -1,0 +1,16 @@
+//convert integers to binary
+//sort integers based on number of ones in binary digit
+//then sort by decimal value
+//put sorted integers into new array
+
+function sortByBit(arr) {
+  let sortedArr = [];
+  const bitmap = arr.map((x) => x.toString(2));
+  for (let i = 0; i < bitmap.length; i++) {
+    console.log(bitmap[i]);
+    // console.log(arr[i].toString(2));
+  }
+}
+
+// sortByBit([1, 0, 3, 32, 40, 16, 8, 5, 17]);
+sortByBit([0, 1, 2, 3, 4, 5, 6, 7, 8, 15]);
