@@ -5,10 +5,17 @@
 
 function sortByBit(arr) {
   let sortedArr = [];
-  const bitmap = arr.map((x) => x.toString(2));
-  for (let i = 0; i < bitmap.length; i++) {
-    console.log(bitmap[i]);
-    // console.log(arr[i].toString(2));
+  let count = 0;
+  const binarymap = arr.map((x) => x.toString(2));
+  for (let i = 0; i < binarymap.length; i++) {
+    // console.log(binarymap[i]);
+    for (let j = 0; j < binarymap[i].length; j++) {
+      console.log(binarymap[i]);
+    }
+    // if (binarymap.charAt(i) == "1") {
+    //   count++;
+    // }
+    // console.log(bitmap[i]);
   }
 }
 
