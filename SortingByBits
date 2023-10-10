@@ -1,7 +1,7 @@
 //convert integers to binary
 //make key/value pair
-//sort integers based on number of ones in binary digit
-//then sort by decimal value
+//sort by decimal value first
+//then sort integers based on number of ones in binary digit
 //put sorted integers into new array
 
 function sortByBit(arr) {
@@ -9,7 +9,6 @@ function sortByBit(arr) {
   let obj = {};
   const binarymap = arr.map((x) => x.toString(2));
   for (let i = 0; i < binarymap.length; i++) {
-    // console.log(binarymap[i]);
     let count = 0;
     for (let j = 0; j < binarymap[i].length; j++) {
       if (binarymap[i][j] == 1) {
@@ -17,7 +16,6 @@ function sortByBit(arr) {
       }
     }
     arr2.push(count);
-    // console.log(count);
     obj[binarymap[i]] = arr2[i];
   }
   console.log(obj);
