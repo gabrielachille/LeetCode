@@ -1,25 +1,20 @@
 function isValidWalk(walk) {
-  // directions = { n: 1, e: 1, w: -1, s: -1 };
   let count = 0;
-  if (walk.length != 10) {
+  if (walk.length !== 10) {
     return false;
   }
 
   for (let i = 0; i < walk.length; i++) {
-    if (i === "n" || i === "e") {
+    if (walk[i] === "n") {
       count++;
-      console.log(count);
-    } else if (i === "s" || i === "w") {
+    } else if (walk[i] === "s") {
       count--;
-      console.log(count);
+    } else if (walk[i] === "e") {
+      count += 2;
+    } else if (walk[i] === "w") {
+      count -= 2;
     }
   }
 
   return count === 0 ? true : false;
 }
-
-// console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
-console.log(isValidWalk(["n", "n", "n", "s", "n", "s", "n", "s", "n", "s"]));
-// console.log(
-//   isValidWalk(["w", "s", "n", "e", "s", "e", "w", "n", "w", "e", "w", "e"])
-// );
