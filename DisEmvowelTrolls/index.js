@@ -3,7 +3,7 @@
 //7 kyu
 
 function disemvowel(str) {
-  let vowels = /[^aeiou]/gi;
+  let vowels = /[aeiou]/gi;
   str = str.filter((x) => x.match(vowels));
   return str;
 }
