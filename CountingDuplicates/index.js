@@ -9,10 +9,12 @@ function duplicateCount(text) {
     } else {
       obj[i]++;
     }
+    for(let i in obj){
     if (obj[i] > 1){
       count++
     }
-    
+    }
+    return count;
   }
   return obj;
 }
