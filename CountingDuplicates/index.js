@@ -1,5 +1,6 @@
 function duplicateCount(text) {
   let obj = {};
+  let count = 0;
 
   for (let i of text) {
     i = i.toLowerCase();
@@ -8,6 +9,10 @@ function duplicateCount(text) {
     } else {
       obj[i]++;
     }
+    if (obj[i] > 1){
+      count++
+    }
+    
   }
   return obj;
 }
