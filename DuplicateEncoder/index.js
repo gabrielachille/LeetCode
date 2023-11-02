@@ -7,10 +7,8 @@ function duplicateEncode(word) {
   for (let i = 0; i < word.length; i++) {
     if (word.indexOf(word[i]) === word.lastIndexOf(word[i])) {
       word[i] == "(";
-      console.log(word[i]);
     } else {
       word[i] == ")";
-      console.log(word[i]);
     }
   }
 }
