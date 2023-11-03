@@ -1,19 +1,13 @@
+// take given string and return "(" for characters that only appear once
+// and ")" for characters that appear multiple times
+// case insensitive
 function duplicateEncode(word) {
-  // take given string and return "(" for characters that only appear once
-  // and ")" for characters that appear multiple times
-  word = word.toLowerCase();
-  word = word.split("");
-  for (let i = 0; i < word.length; i++) {
-    // figure out the last character egdecase
-    if (word.indexOf(word[i]) === word.lastIndexOf(word[i])) {
-      word[i] = "(";
-    } else {
-      word[i] = ")";
-    }
-  }
-  console.log(word);
+  word = word.toLowerCase().split("");
+  return word
+    .map((char, i, word) => {
+      return word.indexOf(char) == word.lastIndexOf(char) ? "(" : ")";
+    })
+    .join("");
 }
 
-duplicateEncode("recede");
-
-//   word.map(char)=>
+console.log(duplicateEncode("recede"));
