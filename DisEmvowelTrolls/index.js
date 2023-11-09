@@ -8,6 +8,6 @@ function disemvowel(str) {
   return str;
 }
 
-disemvowel("This website is fur losers LOL!");
+console.log(disemvowel("This website is fur losers LOL!"));
 
 disemvowel("No offense but,\nYour writing is among the worst I've ever read");
