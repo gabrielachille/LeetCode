@@ -22,6 +22,7 @@ function sortByBit(arr) {
     //create an object with binary keys: no. of ones values
     obj[binarymap[i]] = arr2[i];
   }
+   
   console.log(parseInt(Object.keys(obj), 2));
 }
 
