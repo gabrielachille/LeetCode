@@ -1,3 +1,7 @@
+//Take number and return multiplicative persistence
+//the number of times you can multiply the digits in a number
+//before you get one digit
+
 function persistence(num) {
   let count = 0;
   // turn digits into string
