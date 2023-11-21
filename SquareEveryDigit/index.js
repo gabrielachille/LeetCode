@@ -6,8 +6,7 @@ function squareDigits(num) {
     .toString()
     .split("")
     .map((x) => x * x)
-    .join("")
-    .toString(2);
+    .join("");
   return +num;
 }
 
