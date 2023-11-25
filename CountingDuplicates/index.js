@@ -24,4 +24,5 @@ function duplicateCount(text) {
   return count;
 }
 
+
 console.log(duplicateCount("aabbcde"));
