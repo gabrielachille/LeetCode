@@ -3,8 +3,8 @@
 
 function highAndLow(num) {
   num = num.split(" ").map((x) => parseInt(x, 10));
-  let high = Math.min(...num);
-  let low = Math.max(...num);
+  let high = Math.max(...num);
+  let low = Math.min(...num);
   return `${high} ${low}`.toString();
 }
 
