@@ -1,7 +1,9 @@
+//remove any instances of the number in the second array
+//from nthe first array
+//6kyu
+
 function arrayDiff(a, b) {
-  return a.foreach((x) =>
-    x.indexOf(b[0]) === x.lastIndexOf(b[0]) ? a.pop(x) : 0
-  );
+  return a.filter((x) => !b.includes(x));
 }
 
 console.log(arrayDiff([1, 2], [2]));
