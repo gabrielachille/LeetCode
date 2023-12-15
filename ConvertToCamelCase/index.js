@@ -3,13 +3,15 @@
 //6kyu
 
 function toCamelCase(str) {
-  str = str.split(/-|_/g);
+  str = str.toLowerCase();
 
   for (i = 0; i < str.length; i++) {
     // if (!str[0]) {
     //   str[i].replace(str[i], str[i][0].toUpperCase());
     // }
   }
+
+  // str = str.split(/-|_/g);
   return str;
 }
 
