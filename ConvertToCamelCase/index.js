@@ -4,14 +4,18 @@
 
 function toCamelCase(str) {
   str = str.toLowerCase();
+  let dash = /-|_/g;
 
   for (i = 0; i < str.length; i++) {
-    // if (!str[0]) {
-    //   str[i].replace(str[i], str[i][0].toUpperCase());
-    // }
+    if (str[i] === dash) {
+      // str[i].replace(str[i], str[i][0].toUpperCase());
+      // str[i + 1].replace(str[i + 1], str[i + 1].toUpperCase());
+      console.log(str[i]);
+    }
+    // console.log(str[i + 1]);
   }
 
-  // str = str.split(/-|_/g);
+  // str = str.split(dash);
   return str;
 }
 
