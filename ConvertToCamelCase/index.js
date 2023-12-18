@@ -4,19 +4,18 @@
 
 function toCamelCase(str) {
   str = str.toLowerCase();
+  str = str.split("");
+  str[0] = str[0].toUpperCase();
   let dash = /-|_/g;
 
   for (i = 0; i < str.length; i++) {
-    if (str[i] === dash) {
-      // str[i].replace(str[i], str[i][0].toUpperCase());
-      // str[i + 1].replace(str[i + 1], str[i + 1].toUpperCase());
-      console.log(str[i]);
+    if (dash.test(str[i])) {
+      str[i + 1] = str[i + 1].toUpperCase();
+      str.splice(i, 1);
     }
-    // console.log(str[i + 1]);
   }
 
-  // str = str.split(dash);
-  return str;
+  return str.join("");
 }
 
 console.log(toCamelCase("the-stealth-warrior"));
