@@ -3,14 +3,19 @@
 //6kyu
 
 function toCamelCase(str) {
-  str = str.split(/-|_/g);
+  str = str.toLowerCase();
+  str = str.split("");
+  str[0] = str[0].toUpperCase();
+  let dash = /-|_/g;
 
   for (i = 0; i < str.length; i++) {
-    // if (!str[0]) {
-    //   str[i].replace(str[i], str[i][0].toUpperCase());
-    // }
+    if (dash.test(str[i])) {
+      str[i + 1] = str[i + 1].toUpperCase();
+      str.splice(i, 1);
+    }
   }
-  return str;
+
+  return str.join("");
 }
 
 console.log(toCamelCase("the-stealth-warrior"));
