@@ -1,17 +1,7 @@
-//Return a new string where every unique character is "("
-//and every repeated character is ")"
-//case is ignored
+//Every number in an array is the same exept for one
+//Return the one that isn't
 //6kyu
 
 function findUnique(arr) {
-  let newArr = [];
-  arr = arr.toLowerCase();
+  return arr.find((n) => indexOf(n) === arr.lastIndexOf(n));
 }
-
-console.log(findUnique("din"));
-console.log(findUnique("recede"));
-console.log(findUnique("Success"));
-
-// function findUnique(arr) {
-//   return arr.find((n) => indexOf(n) === arr.lastIndexOf(n));
-// }

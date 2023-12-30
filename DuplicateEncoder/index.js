@@ -1,6 +1,7 @@
 // take given string and return "(" for characters that only appear once
 // and ")" for characters that appear multiple times
 // case insensitive
+//6kyu
 
 function duplicateEncode(word) {
   word = word.toLowerCase().split("");
@@ -11,4 +12,6 @@ function duplicateEncode(word) {
     .join("");
 }
 
+console.log(duplicateEncode("din"));
 console.log(duplicateEncode("recede"));
+console.log(duplicateEncode("Success"));
