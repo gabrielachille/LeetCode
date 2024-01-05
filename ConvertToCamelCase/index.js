@@ -21,3 +21,14 @@ function toCamelCase(str) {
 console.log(toCamelCase("the-stealth-warrior"));
 console.log(toCamelCase("the_Stealth_Warrior"));
 console.log(toCamelCase("the_stealth-warrior"));
+
+function toCamelCase(str) {
+  let dash = /-|_/gi;
+
+  return str
+    .split(dash)
+    .map(
+      (w, i) => (i > 0 ? w.charAt(0).toUpperCase() : w.charAt(0)) + w.slice(1)
+    )
+    .join("");
+}
