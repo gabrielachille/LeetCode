@@ -21,10 +21,5 @@ console.log(sortArray([1, 11, 2, 8, 3, 4, 5]));
 function sortArray(arr) {
   let odd = arr.filter((x) => x % 2 === 1).sort((a, b) => a - b);
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 1) {
-      arr[i] = odd.shift();
-    }
-  }
-  return arr;
+  return arr.map((x) => (x % 2 === 1 ? odd.shift() : x));
 }
