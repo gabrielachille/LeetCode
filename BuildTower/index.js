@@ -1,8 +1,10 @@
 function towerBuilder(nFloors) {
-  for (let i = 0; i < nFloors.length; i++) {
-    nFloors[i] = "*";
+  let arr = [];
+  for (let i = 0; i < nFloors; i++) {
+    arr[i] = arr[i - 1] + "*";
+    // console.log(i);
   }
-  return nFloors[3];
+  return arr;
 }
 
 console.log(towerBuilder(4));
