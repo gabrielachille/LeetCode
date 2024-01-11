@@ -14,7 +14,3 @@ isPangram("hello");
 
 isPangram("the quick brown fox jumps over the lazy dog");
 //true
-
-function isPangram(str) {
-  for (let i = 0; i < str.length; i++) {}
-}
