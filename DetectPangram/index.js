@@ -3,14 +3,18 @@
 //ex "The quick brown fox jumps over the lazy dog"
 //case insensitive
 
-function isPangram(string) {
-  let alpha = "abcdefghijklmnopqrstuvwxyz".split("");
-  string = string.toLowerCase();
-  return alpha.every((x) => string.includes(x));
-}
+// function isPangram(string) {
+//   let alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+//   string = string.toLowerCase();
+//   return alpha.every((x) => string.includes(x));
+// }
 
 isPangram("hello");
 //false
 
 isPangram("the quick brown fox jumps over the lazy dog");
 //true
+
+function isPangram(str) {
+  for (let i = 0; i < str.length; i++) {}
+}
