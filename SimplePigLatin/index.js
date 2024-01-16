@@ -1,3 +1,7 @@
+//convert string to Pig Latin
+//ignore punctuation
+//5 kyu
+
 function pigIt(str) {
   str = str
     .split(" ")
