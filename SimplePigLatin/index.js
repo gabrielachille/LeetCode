@@ -5,10 +5,11 @@
 function pigIt(str) {
   str = str
     .split(" ")
-    .map((x) => (x.match(/[a-z]/i) ? x.slice(1) + x.charAt(0) + "ay" : x))
+    .map((word) =>
+      word.match(/[a-z]/i) ? word.slice(1) + word.charAt(0) + "ay" : word
+    )
     .join(" ");
 
-  //   return str.map((x) => x.match(punct) === false ?);
   return str;
 }
 
