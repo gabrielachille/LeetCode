@@ -18,8 +18,12 @@ console.log(sortArray([7, 1]));
 console.log(sortArray([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]));
 console.log(sortArray([1, 11, 2, 8, 3, 4, 5]));
 
-function sortArray(arr) {
-  let odd = arr.filter((x) => x % 2 === 1).sort((a, b) => a - b);
+// function sortArray(arr) {
+//   let odd = arr.filter((x) => x % 2 === 1).sort((a, b) => a - b);
 
-  return arr.map((x) => (x % 2 === 1 ? odd.shift() : x));
+//   return arr.map((x) => (x % 2 === 1 ? odd.shift() : x));
+// }
+
+function sortArray(arr) {
+  let oddNum = arr.filter((x) => x % 2 !== 0);
 }
