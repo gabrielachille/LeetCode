@@ -10,7 +10,11 @@
 
 console.log(highAndLow("1 2 3 4 5"));
 
-function highAndLow(str) {
-  str = str.split(" ").map((x = parseInt(x, 10)));
-  return str;
+// function highAndLow(str) {
+//   str = str.split(" ").map((x = parseInt(x, 10)));
+//   return str;
+// }
+
+function highAndLow(num) {
+  num = num.split(" ").map((x) => parseInt(x, 10));
 }
