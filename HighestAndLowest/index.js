@@ -19,5 +19,5 @@ function highAndLow(num) {
   num = num.split(" ").map((x) => parseInt(x, 10));
   high = num.reduce((x, y) => (x > y ? x : y));
   low = num.reduce((x, y) => (x < y ? x : y));
-  return `${high} ${low}`;
+  return `${high} ${low}`.toString();
 }
