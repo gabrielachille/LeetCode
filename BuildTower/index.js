@@ -3,8 +3,8 @@
 
 function towerBuilder(nFloors) {
   let arr = [];
-  for (let i = 1; i < nFloors; i++) {
-    arr[i] = "*" + " ".repeat(i);
+  for (let i = 0; i < nFloors; i++) {
+    arr[i] = "*".repeat(i);
   }
   return arr;
 }
