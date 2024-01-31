@@ -15,3 +15,7 @@ function duplicateEncode(word) {
 console.log(duplicateEncode("din"));
 console.log(duplicateEncode("recede"));
 console.log(duplicateEncode("Success"));
+
+function duplicateEncode(word) {
+  word = word.toLowerCase().split("");
+}
