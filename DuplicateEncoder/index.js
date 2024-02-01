@@ -18,4 +18,5 @@ console.log(duplicateEncode("Success"));
 
 function duplicateEncode(word) {
   word = word.toLowerCase().split("");
+  return word.map((x) => (x ? "(" : ")"));
 }
