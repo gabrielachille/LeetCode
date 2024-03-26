@@ -17,7 +17,7 @@
 
 # print(name + " went to the store and bought " + item +" then they went home and played " + game)
 
-price = 7
+price = 8
 
 numcoffee = input("RB: How many coffees do you wnat?")
 total = price * int(numcoffee)
