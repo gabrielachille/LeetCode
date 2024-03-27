@@ -9,7 +9,7 @@
 
 #-- went to the store and grabbed some --, then i went home and played --
 
-# name = input("who?")
+# name = input("who dis?")
 
 # item = input("what do you need?")
 
@@ -17,13 +17,20 @@
 
 # print(name + " went to the store and bought " + item +" then they went home and played " + game)
 
-price = 8
+# price = 8
 
-numcoffee = input("RB: How many coffees do you wnat?")
-total = price * int(numcoffee)
+# numcoffee = input("RB: How many coffees do you wnat?")
+# total = price * int(numcoffee)
 
-total = str(total)
+# total = str(total)
 
-print("RB: Your total is $" + total)
+# print("RB: Your total is $" + total)
 
 # print(total)
+
+age = int(input("Enter your age\n"))
+
+if age >= 21:
+    print("You get a beer")
+else:
+    print("You get a juice")
