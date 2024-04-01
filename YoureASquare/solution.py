@@ -32,5 +32,7 @@ age = int(input("Enter your age\n"))
 
 if age >= 21:
     print("You get a beer")
+    if age >= 35:
+        print("One foot is in the grave")
 else:
     print("You get a juice")
