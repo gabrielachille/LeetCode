@@ -43,4 +43,4 @@ if name == "Ben" or name == "Patricia":
         print("You're not welcome here Patricia!! Get out!! ")
         exit()
 else:
-    print("Hello " + name + ", thank you so much for coming in today.\n\n\n")
+    print("Hello " + name + ", thank you so much for coming in today.\n\n")
