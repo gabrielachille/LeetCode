@@ -12,7 +12,7 @@ item = input("what do you need?")
 
 game = input("What's your favorite game?")
 
-# print(name + " went to the store and bought " + item +" then they went home and played " + game)
+print(name + " went to the store and bought " + item +" then they went home and played " + game)
 
 # price = 8
 
