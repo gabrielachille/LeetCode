@@ -1,6 +1,3 @@
-#return true if square
-# print("i am iron man", "\ni am iron, man", "\nman iron am i ?")
-
 # name = input("what is your name? ")
 
 # print("Hello "+ name)
@@ -8,12 +5,12 @@
 #python madlibs
 
 #-- went to the store and grabbed some --, then i went home and played --
+1
+name = input("who dis?")
 
-# name = input("who dis?")
+item = input("what do you need?")
 
-# item = input("what do you need?")
-
-# game = input("What's your favorite game?")
+game = input("What's your favorite game?")
 
 # print(name + " went to the store and bought " + item +" then they went home and played " + game)
 
@@ -32,7 +29,6 @@ age = int(input("Enter your age\n"))
 
 if age >= 21:
     print("You get a beer")
-    if age >= 35:
-        print("One foot is in the grave")
+    if age < 21:
 else:
     print("You get a juice")
