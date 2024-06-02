@@ -6,5 +6,12 @@
 //   return a.filter((x) => !b.includes(x));
 // }
 
-console.log(arrayDiff([1, 2], [2]));
+// console.log(arrayDiff([1, 2], [2]));
 console.log(arrayDiff([1, 2, 2, 2, 3], [2]));
+
+function arrayDiff(a, b){
+    for(let i = 0;i < a.length; i++ ){
+
+    }
+    return a.splice(4, 1)
+}
