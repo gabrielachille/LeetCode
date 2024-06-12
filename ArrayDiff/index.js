@@ -9,6 +9,6 @@
 console.log(arrayDiff([1, 2], [2]));
 console.log(arrayDiff([1, 2, 2, 2, 3], [2]));
 
-function arrayDiff(x, y){
-    return x.filter((a) =>!y.includes(a))
+function arrayDiff(a, b){
+    return a.filter((x) =>!b.includes(x))
 }
