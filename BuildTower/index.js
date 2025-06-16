@@ -1,4 +1,5 @@
 //Build a pyramid-shaped tower with n number of floors
+//
 //6kyu
 
 function towerBuilder(nFloors) {
