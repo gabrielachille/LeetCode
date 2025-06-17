@@ -1,6 +1,5 @@
 function duplicateCount(text) {
   // iterate through string and return the amount of repeated characters
-  //
   let count = 0;
   let obj = {};
 
